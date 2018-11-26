@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head title="Historical Weather Browser"> 
+        <link rel="stylesheet" href="style.css">  
+    </head>
+    <body>
+        <p class="thick">Historical Weather Browser</p>
+        <br>
+        <div>
+            <p class="normal">Please Select a Date Range</p>
+            <label for="startRange" class="normal">Start:</label>
+            <input type="date" id="startRange" name="Start Date" min="2000-01-01" value="2017-01-01" required>
+    		<span class="validity"></span>
+    		<label for="endRange" class="normal">End:</label>
+            <input type="date" id="endRange" name="End Date" min="2000-01-01" required>
+    		<span class="validity"></span>
+        </div>
+        <br>
+        <div>
+            <button id="search"> Search </button>
+        </div>
+        <br>
+      	<div>
+            <h3>Historical Weather Readings</h3>
+            <table id="readingsTable">
+                <thead>
+                    <th>Station Name</th>
+                    <th>Date</th> 
+                    <th>Mean Temp.</th>
+                <thead>
+				<tbody id="readingsTableBody">
+				</tbody>
+            </table>
+
+            </div>
+
+         <script src="weather.js"></script> 
+    </body> 
+</html>
+
